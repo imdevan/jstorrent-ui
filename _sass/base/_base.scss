@@ -1,0 +1,19 @@
+$primary-text-color: #444;
+
+.base {
+    &--h1 {
+        
+    }
+    &--a {
+      background: linear-gradient(90deg, rgb(142, 68, 173), rgb(155, 89, 182));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+}
+
+
+body{ 
+	@extend %helvetica;
+	background: #fff;
+	color: $primary-text-color;
+}
