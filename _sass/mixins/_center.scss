@@ -3,7 +3,14 @@
         position: relative;
         top: 50%;
         transform: translateY(-50%);
+        margin: 0;
+    } @else if $orientation == "both" {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0 auto;
     } @else {
-        margin: auto;
+        position: relative;
+        margin: 0 auto;
     }
 }

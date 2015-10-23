@@ -1,9 +1,16 @@
+$mid: 36rem;
+
 ._full-page {
     @include size(100vh, 100%);
     
     &--message {
-        @include size(auto, 70%);
-        @include center("vertical");
-        float: right;
+        @include center("both");
+        @include size(auto, 80%);
+        
+        @media screen and (min-width: $mid) {
+            @include center("vertical");
+            @include size(auto, 70%);
+            float: right;
+        }
     }
 }
