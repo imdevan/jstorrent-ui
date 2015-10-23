@@ -1,7 +1,7 @@
 ._full-page {
     @include size(100vh, 100%);
     background: url("http://www.pachd.com/free-images/nature-images/nature-08.jpg");
-    
+    background-size: cover;
     
     &--message {
         @include size(auto, 70%);
