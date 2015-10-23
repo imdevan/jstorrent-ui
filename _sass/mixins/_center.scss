@@ -1,0 +1,9 @@
+@mixin center($orientation) {
+    @if $orientation == "vertical" {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    } @else {
+        margin: auto;
+    }
+}

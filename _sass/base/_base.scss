@@ -1,13 +1,19 @@
 $primary-text-color: #444;
+$gradient: linear-gradient(90deg, $cadetblue 0%, $orange 100%);
 
 .base {
     &--h1 {
         
     }
     &--a {
-      background: linear-gradient(90deg, rgb(142, 68, 173), rgb(155, 89, 182));
+      background: $gradient;
+      box-sizing: border-box;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      
+      &:hover {
+          border-bottom: 2px solid $cadetblue;
+      }
     }
 }
 
